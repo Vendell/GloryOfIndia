@@ -1,78 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@drawable/goi_background">
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <LinearLayout
-        android:id="@+id/linear"
-        android:layout_below="@+id/textView"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="GALLERY"/>
+
+            <ImageView
+                android:id="@+id/single"
+                android:layout_width="0dp"
+                android:src="@drawable/g1"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true" />
+
+            <ImageView
+                android:id="@+id/volume"
+                android:layout_width="0dp"
+                android:src="@drawable/g2"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true" />
+        </LinearLayout>
 
         <ImageView
-            android:id="@+id/single"
-            android:layout_width="0dp"
-            android:paddingBottom="10dp"
-            android:src="@drawable/g1"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:id="@+id/extraImage"
+            android:layout_width="fill_parent"
+            android:src="@drawable/g3"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/linear"
             android:adjustViewBounds="true" />
 
-    </LinearLayout>
+        <ImageView
+            android:id="@+id/extraImage1"
+            android:layout_width="fill_parent"
+            android:src="@drawable/g4"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/extraImage"
+            android:adjustViewBounds="true" />
 
-    <ImageView
-        android:id="@+id/extraImage"
-        android:layout_width="fill_parent"
-        android:paddingBottom="10dp"
-        android:src="@drawable/g3"
-        android:layout_height="fill_parent"
-        android:layout_below="@+id/linear"
-        android:adjustViewBounds="true" />
+        <ImageView
+            android:id="@+id/extraImage2"
+            android:layout_width="fill_parent"
+            android:src="@drawable/g5"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/extraImage1"
+            android:adjustViewBounds="true" />
 
-    <ImageView
-        android:id="@+id/extraImage1"
-        android:layout_width="fill_parent"
-        android:paddingBottom="10dp"
-        android:src="@drawable/g4"
-        android:layout_height="fill_parent"
-        android:layout_below="@+id/extraImage"
-        android:adjustViewBounds="true" />
+        <ImageView
+            android:id="@+id/extraImage3"
+            android:layout_width="fill_parent"
+            android:src="@drawable/g6"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/extraImage2"
+            android:adjustViewBounds="true" />
 
-    <ImageView
-        android:id="@+id/extraImage2"
-        android:layout_width="fill_parent"
-        android:paddingBottom="10dp"
-        android:src="@drawable/g5"
-        android:layout_height="fill_parent"
-        android:layout_below="@+id/extraImage1"
-        android:adjustViewBounds="true" />
+        <ImageView
+            android:id="@+id/extraImage4"
+            android:layout_width="fill_parent"
+            android:src="@drawable/g7"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/extraImage3"
+            android:adjustViewBounds="true" />
 
-    <ImageView
-        android:id="@+id/extraImage3"
-        android:layout_width="fill_parent"
-        android:paddingBottom="10dp"
-        android:src="@drawable/g6"
-        android:layout_height="fill_parent"
-        android:layout_below="@+id/extraImage2"
-        android:adjustViewBounds="true" />
+        <ImageView
+            android:id="@+id/extraImage5"
+            android:layout_width="fill_parent"
+            android:src="@drawable/g8"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/extraImage4"
+            android:adjustViewBounds="true" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#FFFFFF"
-        android:text="GALLERY"
-        android:paddingBottom="10dp"
-        android:textSize="30dp"
-        android:layout_gravity="center"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/extraImage6"
+            android:layout_width="fill_parent"
+            android:src="@drawable/g9"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/extraImage5"
+            android:adjustViewBounds="true" />
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/extraImage7"
+            android:layout_width="fill_parent"
+            android:src="@drawable/g10"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/extraImage6"
+            android:adjustViewBounds="true" />
+
+        <ImageView
+            android:id="@+id/extraImage8"
+            android:layout_width="fill_parent"
+            android:src="@drawable/g11"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/extraImage7"
+            android:adjustViewBounds="true" />
+
+    </RelativeLayout>
 </ScrollView>
