@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/goi_background"
+        android:id="@+id/imageView"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/goi_icon"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/special"
+        android:id="@+id/imageView3"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/abc_cab_background_internal_bg"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView3"
+        android:id="@+id/imageView8"
+        android:layout_alignBottom="@+id/imageView3" />
+
+    <TextView
+        android:text="10% Off Takeaway"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textView"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView3"
+        android:layout_alignBottom="@+id/imageView3"
+        android:fontFamily="serif"
+        android:gravity="top|center"
+        android:layout_below="@+id/imageView"
+        android:textColor="@color/primary_text_default_material_light"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:text="Call Us"
+        android:onClick="onClickCALL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView3"
+        android:layout_marginLeft="81dp"
+        android:layout_marginStart="81dp"
+        android:id="@+id/button"
+        android:textColor="?android:attr/textColorPrimaryNoDisable"
+        tools:textColor="?android:attr/textColorPrimaryNoDisable"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColorHighlight="@color/bright_foreground_inverse_material_dark"
+        />
+
+    <TextView
+        android:text="      Opening Hours
+         MONDAY-SUNDAY
+      11am-2:30pm and 5pm-late"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/imageView3"
+        android:gravity="center"
+        android:textColor="#ffff" />
+
+    <TextView
+        android:text="  ADDRESS:
+        Shop 3/1 Macgregor Street,
+        Corner of Kedron Brook road,
+        Wilston,4051"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
